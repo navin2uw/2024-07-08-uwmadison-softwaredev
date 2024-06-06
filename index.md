@@ -173,7 +173,7 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  {{page.humandate}}.
+  {{page.humandate}}; {{page.humantime}}
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
@@ -456,7 +456,8 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
+<strong> Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+to obtain the software and data you will need to follow the lesson. </strong>
+Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please visit the Data Science Hub at Coding Meetup on Tue/Thur, 2:30-4:30pm.”
 {% endif %}
